@@ -74,7 +74,7 @@
 </template>
 
 <script setup>
-import { register } from 'module';
+
 import AuthLayout from '~/layouts/AuthLayout.vue';
 
 import { useUserStore } from '~~/stores/user';
