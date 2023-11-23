@@ -1,5 +1,5 @@
 <template>
-    <AuthLayout>
+     <AuthLayout>
         <div class="mt-10">
             <h1 class="lg:text-5xl text-3xl text-center font-extrabold">
                 Create your account
