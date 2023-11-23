@@ -11,5 +11,7 @@
 </template>
 
 <script setup>
-import AdminLayout from '~/layouts/AdminLayout.vue';
+import AdminLayout from '~~/layouts/AdminLayout.vue';
+import { useUserStore } from '~~/stores/user'
+const userStore = useUserStore()
 </script>
