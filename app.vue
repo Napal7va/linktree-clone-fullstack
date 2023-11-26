@@ -1,5 +1,6 @@
 <template>
   <VitePwaManifest/>
+  <div v-if="bgIsGray" class="bg-[#F3F3F1] fixed w-full h-full z-[-1]" />
   <NuxtPage/>
 </template>
 <script setup>
@@ -20,6 +21,8 @@ onMounted(() => {
   isPreviewOverlay.value = false
   isMobile.value = false 
 
+  checkPath(route.fullPath)
+
   if ('ontouchstart' in window){
     isMobile.value = true
   }
@@ -39,6 +42,13 @@ const colors = () => {
     ]
 }
 
+const checkPath = (path) => {
+  if (path == '/' || path == '/register') {
+    bgIsGray.value = false
+    return
+  }
+  bgIsGray.value = true
+}
 
 
 </script>
