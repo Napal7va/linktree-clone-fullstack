@@ -9,7 +9,7 @@
             </NuxtLink>
             <main class="w-full">
                 <div class="w-full md:max-w-[550px] max-w-[360px] mx-auto">
-                    <slot/>
+                    <slot />
                 </div>
             </main>
         </div>
